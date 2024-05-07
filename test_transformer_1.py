@@ -258,7 +258,7 @@ def eval_plot(encoder, decoder, dataloader):
 def main():
     # train, val 데이터 셋 불러오기
     dataset_train = StockDataset(file_path=args.data_path)
-    dataset_val = StockDataset(file_path=args.data_path, train_flag=False
+    dataset_val = StockDataset(file_path=args.data_path, train_flag=False)
     train_loader = DataLoader(dataset_train, batch_size=64, shuffle=True)
     val_loader = DataLoader(dataset_val, batch_size=64, shuffle=False)
 
